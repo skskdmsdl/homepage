@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 Homepage Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="wrapper">
+    
+    
+    <div id="landing">
+        <!-- Header -->
+        <header id="header">
+            <span id="home"><a href="index.html"><img src="images/home.png" alt=""></a></span>
+            <nav id="nav">
+                <ul>
+                    <li><a href="info.html">info</a></li>
+                    <li><a href="movie.html">movie</a></li>
+                    <li><a href="roadmap.html">roadmap</a></li>
+                    <li><a href="#wrap" id="signup-button" onclick="signupbtn()" >Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <div id="banner">
+            <div class="content">
+                <header>
+                    <p>Of Human Bondage</p>
+                </header>
+            </div>
+        </div>
+                
+        <!-- sign up -->
+        <div id="signWrap"></div>
+        <div id="wrap">
+            <div class="form-wrap">
+                <div class="button-wrap">
+                    <div id="btn"></div>
+                    <button type="button" id="loginBtn" class="togglebtn" onclick="login()">LOG IN</button>
+                    <button type="button" id="registerBtn" class="togglebtn" onclick="register()">REGISTER</button>
+                </div>
+                <input type="button" id="closeBtn" value="×" onclick="closeBtn();">
+                <div class="social-icons">
+                    <img src="images/naver.png" alt="naver">
+                    <img src="images/facebook.png" alt="facebook">
+                    <img src="images/google.png" alt="google">
+                </div>
+                <form id="login" action="javascript:alert('환영합니다 :)');" onsubmit="return loginVal();" class="input-group">
+                    <input type="text" id="loginId" class="input-field" placeholder="User ID" required>
+                    <input type="password" id="loginPwd" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button class="submit">LOG IN</button>
+                </form>
+                <form id="register" action="javascript:alert('가입완료');" onsubmit="return resisterVal();" class="input-group">
+                    <input type="text" id="userId" class="input-field" placeholder="User ID" required>
+                    <input type="email" id="userEmail" class="input-field" placeholder="User Email" required>
+                    <input type="password" id="userPwd" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" id="userPwdChk" class="input-field" placeholder="Enter Password Check" required>
+                    <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
+                    <button class="submit">REGISTER</button>
+                </form>
+            </div>
+        </div>
+        
+
+        <!-- info -->
+        <div id="info">
+            <h2>ㅡ</h2>
+            <p class="infoTxt">Infomation</p>
+            <img class="nextcat" src="images/neonCat.jpg" alt="">
+            <a href="info.html" id="next">Go to page▶</a>
+            <p class="text2">
+                홈페이지에 오신것을 환영합니다 :) 
+                <br>
+                이 페이지에서는 저의 한 부분이라고 할 수 있는 효리, 바다, 도리, 니모에 대해 소개하겠습니다.
+                <br> 
+                아래의 이동 버튼을 누르면 페이지로 이동합니다.  
+            </p>
+        </div>
+        
+        <!-- movie -->
+        <div id="movie" >
+            <!-- line -->
+            <h2>ㅡ</h2>
+            <a href="movie.html">
+            <img class="movieLine" src="images/popcon.png" alt="">
+            <span class="movieTxt1">Life is<br></span>
+            <span class="movieTxt2">like a<br></span>
+            <span class="movieTxt3">movie</span>
+            </a>
+            <a href="movie.html" id="next" class="movieNext">Go to page▶</a>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <p>Copyright © 2020 euni All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

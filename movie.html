@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="moviePage">
+        <header id="movieHeader">
+            <span id="home"><a href="index.html"><img src="images/home.png" alt=""></a></span>
+            <nav id="nav">
+                <ul>
+                    <li><a href="info.html">info</a></li>
+                    <li><a href="movie.html">movie</a></li>
+                    <li><a href="roadmap.html">roadmap</a></li>
+                    <li><a href="#wrap" id="signup-button" onclick="signupbtn()" >Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- banner -->
+        <div id="slide">
+            <input type="radio" name="pos" id="pos1" checked>
+            <input type="radio" name="pos" id="pos2">
+            <input type="radio" name="pos" id="pos3">
+            <input type="radio" name="pos" id="pos4">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <p class="pos">
+              <label for="pos1" onclick="movieTxtAni1()"></label>
+              <label for="pos2" onclick="movieTxtAni2()"></label>
+              <label for="pos3" onclick="movieTxtAni3()"></label>
+              <label for="pos4" onclick="movieTxtAni4()"></label>
+            </p>
+            <p id="movieBTxt1">LA LA LAND</p>
+            <p id="movieBTxt2">her</p>
+            <p id="movieBTxt3">The Florida Project</p>
+            <p id="movieBTxt4">WHIPLASH</p>
+        </div>
+
+        <!-- sign up -->
+        <div id="signWrap"></div>
+        <div id="wrap">
+            <div class="form-wrap">
+                <div class="button-wrap">
+                    <div id="btn"></div>
+                    <button type="button" id="loginBtn" class="togglebtn" onclick="login()">LOG IN</button>
+                    <button type="button" id="registerBtn" class="togglebtn" onclick="register()">REGISTER</button>
+                </div>
+                <input type="button" id="closeBtn" value="×" onclick="closeBtn();">
+                <div class="social-icons">
+                    <img src="images/naver.png" alt="naver">
+                    <img src="images/facebook.png" alt="facebook">
+                    <img src="images/google.png" alt="google">
+                </div>
+                <form id="login" action="javascript:alert('환영합니다 :)');" onsubmit="return loginVal();" class="input-group">
+                    <input type="text" id="loginId" class="input-field" placeholder="User ID" required>
+                    <input type="password" id="loginPwd" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button class="submit">LOG IN</button>
+                </form>
+                <form id="register" action="javascript:alert('가입완료');" onsubmit="return resisterVal();" class="input-group">
+                    <input type="text" id="userId" class="input-field" placeholder="User ID" required>
+                    <input type="email" id="userEmail" class="input-field" placeholder="User Email" required>
+                    <input type="password" id="userPwd" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" id="userPwdChk" class="input-field" placeholder="Enter Password Check" required>
+                    <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
+                    <button class="submit">REGISTER</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="movieWrapper">
+            <div id="movieTxtWrapper">
+                <ul>
+                    <li id="lalaTxt">"People love <br>what other people are<br> passionate<br> about."</li>
+                    <li id="herTxt">"I can overthink everything <br>and find a million ways <br>to doubt myself,<br>
+                        but I've come to realize <br>that we're only here briefly"</li>
+                    <li id="floridaTxt">"At the end <br>of the rainbow <br>is gold!"</li>
+                    <li id="whiplashTxt">"There are no <br>two words <br>in the English language <br>more harmful <br>than 'good job'"</li>
+                  </ul>
+            </div>
+            <div class="movieContent">
+                <img class="movieContent" src="images/film.jpg" alt="">
+            </div>
+            <div id="contentBack"></div>
+        </div>
+
+        <!-- footer -->
+
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

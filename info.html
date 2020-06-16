@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infomation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body id="infoBody">
+    
+    <div id="infoPage">
+        <header>
+            <span id="home"><a href="index.html"><img src="images/home.png" alt=""></a></span>
+            <nav id="nav">
+                <ul>
+                    <li><a href="info.html">info</a></li>
+                    <li><a href="movie.html">movie</a></li>
+                    <li><a href="roadmap.html">roadmap</a></li>
+                    <li><a href="#wrap" id="signup-button" onclick="signupbtn()" >Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- background -->
+        <div id="infoBackId" class="infoBack">
+            <img class="infoBack" src="images/infoBack.jpg" alt="">
+        </div>
+
+        <!-- sign up -->
+        <div id="signWrap"></div>
+        <div id="wrap">
+            <div class="form-wrap">
+                <div class="button-wrap">
+                    <div id="btn"></div>
+                    <button type="button" id="loginBtn" class="togglebtn" onclick="login()">LOG IN</button>
+                    <button type="button" id="registerBtn" class="togglebtn" onclick="register()">REGISTER</button>
+                </div>
+                <input type="button" id="closeBtn" value="×" onclick="closeBtn();">
+                <div class="social-icons">
+                    <img src="images/naver.png" alt="naver">
+                    <img src="images/facebook.png" alt="facebook">
+                    <img src="images/google.png" alt="google">
+                </div>
+                <form id="login" action="javascript:alert('환영합니다 :)');" onsubmit="return loginVal();" class="input-group">
+                    <input type="text" id="loginId" class="input-field" placeholder="User ID" required>
+                    <input type="password" id="loginPwd" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button class="submit">LOG IN</button>
+                </form>
+                <form id="register" action="javascript:alert('가입완료');" onsubmit="return resisterVal();" class="input-group">
+                    <input type="text" id="userId" class="input-field" placeholder="User ID" required>
+                    <input type="email" id="userEmail" class="input-field" placeholder="User Email" required>
+                    <input type="password" id="userPwd" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" id="userPwdChk" class="input-field" placeholder="Enter Password Check" required>
+                    <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
+                    <button class="submit">REGISTER</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="infoContent">
+            <div class="infoImg">
+                <img class="infoImg" src="images/infoCat.png" alt="">
+            </div>
+            <div>
+                <input type="button" id="nimoBtnId" value="NIMO" onclick="nimoBtn();">
+                <input type="button" id="hyoriBtnId" value="HYORI" onclick="hyoriBtn();">
+                <input type="button" id="badaBtnId" value="BADA" onclick="badaBtn();">
+                <input type="button" id="doriBtnId" value="DORI" onclick="doriBtn();">
+            </div>
+            <div>
+                <img src="images/nimo.jpg" id="nimoImg" alt="">
+                <img src="images/hyori.jpg" id="hyoriImg" alt="">
+                <img src="images/bada.png" id="badaImg" alt="">
+                <img src="images/dori.jpg" id="doriImg" alt="">
+            </div>
+            <a href="#nimoTxt" id="nimoTxtBtn">▼</a>
+            <a href="#hyoriTxt" id="hyoriTxtBtn">▼</a>
+            <a href="#badaTxt" id="badaTxtBtn">▼</a>
+            <a href="#doriTxt" id="doriTxtBtn">▼</a>
+
+        </div>
+
+        <div id="infoConTxt">
+            <div id="nimoTxt" class="infoContent1"></div>
+            <div id="hyoriTxt" class="infoContent1"></div>
+            <div id="badaTxt" class="infoContent1"></div>
+            <div id="doriTxt" class="infoContent1"></div>
+            <div class="infoContent2">
+                <ul>
+                    <li>니모를 소개합니다</li><br>
+                    <li>니모</li>
+                    <li>니모</li>
+                    <li>니모</li>
+                    <li>니모</li>
+                </ul>
+            </div>
+            <div class="infoContent2">
+                <ul>
+                    <li>효리를 소개합니다</li><br>
+                    <li>효리</li>
+                    <li>효리</li>
+                    <li>효리</li>
+                    <li>효리</li>
+                </ul>
+            </div>
+            <div class="infoContent2">
+                <ul>
+                    <li>바다를 소개합니다</li><br>
+                    <li>바다</li>
+                    <li>바다</li>
+                    <li>바다</li>
+                    <li>바다</li>
+                </ul>
+            </div>
+            <div class="infoContent2">
+                <ul>
+                    <li>도리를 소개합니다</li><br>
+                    <li>도리</li>
+                    <li>도리</li>
+                    <li>도리</li>
+                    <li>도리</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
