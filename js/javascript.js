@@ -92,9 +92,6 @@ function resisterVal(){
     }
     else {
 
-        $(function() {
-            getMemberBook();
-        })
         $(function(){
                 let member = {
                     id : k,
