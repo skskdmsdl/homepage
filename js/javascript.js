@@ -99,7 +99,6 @@ function resisterVal(){
                     email : $("#userEmail").val(),
                     date : Date.now()
                 }
-                console.log(member);
                 
                 let memberBook = JSON.parse(localStorage.getItem("memberBook"));
 
@@ -117,7 +116,6 @@ function resisterVal(){
         return true;
     };
 }
-
 
 //member
 function getMemberBook() {
