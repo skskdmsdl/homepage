@@ -31,7 +31,6 @@ function closeBtn() {
 }
 
 
-
 //수정 중 입니다
 // 유효성검사 정규식 및 회원정보 불러오기
 let result = "";
@@ -177,7 +176,6 @@ function movieTxtAni4() {
     movieBTxt1.style.display = "none";movieBTxt2.style.display = "none";movieBTxt3.style.display = "none";movieBTxt4.style.display = "inline";
     lalaTxt.style.display = "none";herTxt.style.display = "none";floridaTxt.style.display = "none";whiplashTxt.style.display = "block";
 }
-
 
 // roadmapPage
 $("span:contains('h1')").css({color:"rgba(53,140,214,126)"});
