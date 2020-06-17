@@ -44,10 +44,10 @@ function loginVal() {
         alert("아이디를 잘못 입력하셨습니다.");
         return false;
     }
-    // else if(v!=$("#loginPwd").val()){
-    //     alert("비밀번호를 잘못 입력하셨습니다.");
-    //     return false;
-    // }
+    else if(v!=$("#loginPwd").val()){
+        alert("비밀번호를 잘못 입력하셨습니다.");
+        return false;
+    }
     else {
         $("#wrap").css("display","none");
         $("#signWrap").css("display","none");
