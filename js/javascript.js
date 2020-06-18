@@ -44,7 +44,6 @@ function loginVal() {
                 alert("비밀번호를 잘못 입력하셨습니다.");
                 return false;
             }
-            console.log(member.pwd);
         }
     };        
     
@@ -54,7 +53,6 @@ function loginVal() {
     $("#afterBox").hide()  
     $("#afterLoginBox").show(); 
     return true;
-
 }
 
 // 유효성검사 정규식 및 회원정보 저장
@@ -110,7 +108,6 @@ function resisterVal(){
                 $("#userId, #userPwd, #userEmail, #userPwdChk").val('');
                 getMemberBook();
             })
-
         return true;
     };
 }
