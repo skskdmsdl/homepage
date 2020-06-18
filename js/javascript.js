@@ -1,5 +1,3 @@
-
-
 // signup 관련
 var x = document.getElementById("login");
 var y = document.getElementById("register");
@@ -36,26 +34,27 @@ function closeBtn() {
 let result = "";
 function loginVal() {
 
-    let k = $("#loginId").val();
-    let v = localStorage.getItem(k);
+    let id = $('#loginId');
+    let pwd = $('#loginPwd');
+    let memberBook = JSON.parse(localStorage.getItem('memberBook'));
+    for(let i=0; i<memberBook.length; i++){
+        let member = memberBook[i];
+        if(id.val()==member.id){
+            if(member.pwd != pwd.val()){
+                alert("비밀번호를 잘못 입력하셨습니다.");
+                return false;
+            }
+            console.log(member.pwd);
+        }
+    };        
+    
+    $("#wrap").css("display","none");
+    $("#signWrap").css("display","none");
+    result = "member";
+    $("#afterBox").hide()  
+    $("#afterLoginBox").show(); 
+    return true;
 
-
-    if(!/^[a-z]{5,15}$/g.test(loginId.value)){
-        alert("아이디를 잘못 입력하셨습니다.");
-        return false;
-    }
-    else if(v!=$("#loginPwd").val()){
-        alert("비밀번호를 잘못 입력하셨습니다.");
-        return false;
-    }
-    else {
-        $("#wrap").css("display","none");
-        $("#signWrap").css("display","none");
-        result = "member";
-        $("#afterBox").hide()  
-        $("#afterLoginBox").show(); 
-        return true;
-    };    
 }
 
 // 유효성검사 정규식 및 회원정보 저장
