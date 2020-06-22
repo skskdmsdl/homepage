@@ -28,8 +28,8 @@ function closeBtn() {
     signWrap.style.display = "none";
 }
 
-//수정 중 입니다
 // 유효성검사 정규식 및 회원정보 불러오기
+//memberBook에 저장된 정보와 비교
 let result = "";
 function loginVal() {
 
@@ -125,7 +125,6 @@ function getMemberBook() {
         $("#tbl-memberBook").append(html);
     })
 }
-
 
 // infoPage
 function nimoBtn() {
