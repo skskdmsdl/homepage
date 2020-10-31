@@ -8,6 +8,6 @@
 * HTML/CSS
 
 # 이용 정보
-ID : admin
+ID : admin <br/>
 pwd : adim123!
 
